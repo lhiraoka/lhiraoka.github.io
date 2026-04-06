@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Lillian Hiraoka</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .blog-grid { display: grid; gap: 20px; }
+    .blog-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1.5rem;
+      align-items: start;
+      transition: border-color 0.2s, transform 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    .blog-card:hover { border-color: var(--accent-light); transform: translateY(-2px); }
+    .blog-cat {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .blog-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; margin-bottom: 0.5rem; line-height: 1.3; }
+    .blog-card p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.7; margin-bottom: 1rem; }
+    .blog-meta { font-size: 12px; color: var(--ink-muted); }
+    .blog-arrow { font-size: 20px; color: var(--accent-light); padding-top: 4px; }
+    .blog-placeholder {
+      background: var(--warm-white);
+      border: 1px dashed var(--accent-light);
+      border-radius: 14px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .blog-placeholder h3 { font-family: var(--serif); font-size: 22px; font-weight: 300; color: var(--ink-muted); margin-bottom: 0.5rem; }
+    .blog-placeholder p { font-size: 13px; color: var(--ink-muted); line-height: 1.7; max-width: 380px; margin: 0 auto; }
+    .categories { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2.5rem; }
+    .cat-btn {
+      font-size: 12px;
+      padding: 6px 16px;
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      color: var(--ink-muted);
+      background: var(--warm-white);
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: var(--sans);
+    }
+    .cat-btn:hover, .cat-btn.active { border-color: var(--accent); color: var(--accent); background: var(--accent-pale); }
+    @media (max-width: 680px) {
+      .blog-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-name">Lillian Hiraoka</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="page-eyebrow">Blog</div>
+      <h1>Thinking out <em>loud</em></h1>
+      <p>Science communication, grad school reflections, research explainers, and personal writing. A space to think through ideas in public.</p>
+    </div>
+
+    <section>
+      <div class="categories">
+        <button class="cat-btn active">All</button>
+        <button class="cat-btn">Science & Research</button>
+        <button class="cat-btn">Grad School</button>
+        <button class="cat-btn">Personal</button>
+      </div>
+
+      <!-- HOW TO ADD A BLOG POST:
+           Copy the blog-card block below, update the category, title,
+           excerpt, and date. Link it to a new .html file if you want a full post page,
+           or just keep the # as the href for now.
+      -->
+
+      <div class="blog-grid">
+
+        <a href="#" class="blog-card">
+          <div>
+            <div class="blog-cat">Science & Research</div>
+            <h3>What even is a lipid nanoparticle?</h3>
+            <p>A beginner-friendly explainer on the technology behind mRNA vaccines and why lipid nanoparticles are one of the most exciting platforms in modern medicine.</p>
+            <div class="blog-meta">Coming soon · Lillian Hiraoka</div>
+          </div>
+          <div class="blog-arrow">→</div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div>
+            <div class="blog-cat">Grad School</div>
+            <h3>Applying to chemistry PhD programs: what I wish I knew</h3>
+            <p>Reflections on the application process, choosing programs, and what it actually means to "fit" with a lab and a department.</p>
+            <div class="blog-meta">Coming soon · Lillian Hiraoka</div>
+          </div>
+          <div class="blog-arrow">→</div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div>
+            <div class="blog-cat">Personal</div>
+            <h3>On being a scientist who plays music</h3>
+            <p>How music and science have more in common than I first thought — and why I think every researcher should have a creative outlet.</p>
+            <div class="blog-meta">Coming soon · Lillian Hiraoka</div>
+          </div>
+          <div class="blog-arrow">→</div>
+        </a>
+
+        <div class="blog-placeholder">
+          <h3>More posts coming soon</h3>
+          <p>I'm just getting started. Check back as I settle into grad school life and find things worth writing about.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Lillian Hiraoka · UC Berkeley</footer>
+</body>
+</html>

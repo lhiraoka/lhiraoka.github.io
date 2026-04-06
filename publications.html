@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications — Lillian Hiraoka</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .pub-coming {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .pub-coming-icon { font-size: 40px; margin-bottom: 1rem; }
+    .pub-coming h3 { font-family: var(--serif); font-size: 26px; font-weight: 300; margin-bottom: 0.75rem; }
+    .pub-coming p { font-size: 14px; color: var(--ink-muted); max-width: 440px; margin: 0 auto 1.5rem; line-height: 1.7; }
+    .thesis-preview {
+      border: 1px solid var(--accent-light);
+      background: var(--accent-pale);
+      border-radius: 12px;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: start;
+      margin-bottom: 1rem;
+    }
+    .pub-number {
+      font-family: var(--serif);
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--accent-light);
+      line-height: 1;
+      min-width: 50px;
+    }
+    .thesis-preview h3 { font-family: var(--serif); font-size: 19px; font-weight: 400; margin-bottom: 6px; }
+    .thesis-preview .meta { font-size: 13px; color: var(--ink-muted); margin-bottom: 10px; }
+    .thesis-preview p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.7; }
+    .status-in-progress { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; background: var(--accent); color: white; padding: 3px 12px; border-radius: 20px; display: inline-block; margin-top: 0.75rem; }
+    .google-scholar-cta {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+    .google-scholar-cta p { font-size: 13.5px; color: var(--ink-soft); }
+    @media (max-width: 680px) {
+      .google-scholar-cta { flex-direction: column; align-items: flex-start; }
+      .thesis-preview { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-name">Lillian Hiraoka</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="page-eyebrow">Publications</div>
+      <h1>Written <em>work</em></h1>
+      <p>Peer-reviewed research, theses, and scientific writing. More to come as my PhD work gets underway.</p>
+    </div>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">In Progress</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="thesis-preview">
+        <div class="pub-number">01</div>
+        <div>
+          <h3>Undergraduate Senior Thesis</h3>
+          <div class="meta">Lillian Hiraoka · Landry Lab, UC Berkeley · 2025–2026</div>
+          <p>Details will be shared upon completion. Research conducted at the intersection of chemical biology and nanotechnology, focusing on functional nanomaterials for biosensing and therapeutic applications.</p>
+          <span class="status-in-progress">In progress</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Peer-Reviewed Articles</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="pub-coming">
+        <div class="pub-coming-icon">🔬</div>
+        <h3>Publications coming soon</h3>
+        <p>I am currently in the final year of my undergraduate degree. Peer-reviewed publications will be added here as my research matures and my PhD work begins at Tulane.</p>
+        <a href="research.html" class="btn">See my research interests →</a>
+      </div>
+      <div class="google-scholar-cta">
+        <p>For the most up-to-date list of my publications, you can also check Google Scholar.</p>
+        <a href="#" class="btn">Google Scholar →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Lillian Hiraoka · UC Berkeley</footer>
+</body>
+</html>

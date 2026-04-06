@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Lillian Hiraoka</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      padding: 4rem 0;
+      align-items: start;
+    }
+    .contact-intro {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--ink-soft);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .contact-note { font-size: 14px; color: var(--ink-muted); line-height: 1.8; margin-bottom: 2rem; }
+    .contact-links { display: flex; flex-direction: column; gap: 12px; }
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--ink-soft);
+      background: var(--warm-white);
+      transition: all 0.2s;
+    }
+    .contact-link:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-pale); }
+    .contact-link svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+    .contact-link-text {}
+    .contact-link-label { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 2px; }
+    .contact-link-value { font-size: 14px; font-weight: 400; }
+    .contact-link:hover .contact-link-label { color: var(--accent); opacity: 0.7; }
+    .contact-sidebar {}
+    .sidebar-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      margin-bottom: 16px;
+    }
+    .sidebar-card h3 { font-family: var(--serif); font-size: 20px; font-weight: 400; margin-bottom: 0.75rem; }
+    .sidebar-card p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.75; }
+    .affil-item { display: flex; gap: 12px; padding: 0.75rem 0; border-bottom: 1px solid var(--border); align-items: center; }
+    .affil-item:last-child { border-bottom: none; }
+    .affil-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-light); flex-shrink: 0; }
+    .affil-text {}
+    .affil-name { font-size: 14px; font-weight: 400; }
+    .affil-sub { font-size: 12px; color: var(--ink-muted); }
+    @media (max-width: 680px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-name">Lillian Hiraoka</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="page-eyebrow">Contact</div>
+      <h1>Let's <em>connect</em></h1>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <p class="contact-intro">"Open to collaborations, conversations about science, and new opportunities."</p>
+        <p class="contact-note">Whether you're a fellow researcher, a prospective collaborator, or just want to talk science — feel free to reach out. I'm always happy to connect.</p>
+
+        <div class="contact-links">
+          <a href="mailto:lnhiraoka@icloud.com" class="contact-link">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div class="contact-link-text">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-value">lnhiraoka@icloud.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/lhiraoka/" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            <div class="contact-link-text">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-value">linkedin.com/in/lhiraoka</div>
+            </div>
+          </a>
+          <a href="about.html" class="contact-link">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
+            <div class="contact-link-text">
+              <div class="contact-link-label">CV</div>
+              <div class="contact-link-value">Download my curriculum vitae</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-sidebar">
+        <div class="sidebar-card">
+          <h3>Affiliations</h3>
+          <div class="affil-item">
+            <div class="affil-dot"></div>
+            <div class="affil-text">
+              <div class="affil-name">Landry Lab</div>
+              <div class="affil-sub">UC Berkeley · Current</div>
+            </div>
+          </div>
+          <div class="affil-item">
+            <div class="affil-dot" style="background:var(--accent);"></div>
+            <div class="affil-text">
+              <div class="affil-name">Tulane University</div>
+              <div class="affil-sub">PhD Chemistry · Incoming Fall 2026</div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h3>Best for</h3>
+          <p>Research collaborations, science communication, grad school questions, or just a good conversation about biochemistry, nanomaterials, or neurobiology.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Lillian Hiraoka · UC Berkeley</footer>
+</body>
+</html>

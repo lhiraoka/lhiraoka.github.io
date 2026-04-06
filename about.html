@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Lillian Hiraoka</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 260px;
+      gap: 4rem;
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .about-bio p { font-size: 15px; line-height: 1.9; color: var(--ink-soft); margin-bottom: 1.25rem; }
+    .cv-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2rem;
+      position: sticky;
+      top: 80px;
+      text-align: center;
+    }
+    .cv-icon { font-size: 36px; margin-bottom: 1rem; }
+    .cv-card h3 { font-family: var(--serif); font-size: 22px; font-weight: 400; margin-bottom: 0.5rem; }
+    .cv-card p { font-size: 13px; color: var(--ink-muted); margin-bottom: 1.5rem; line-height: 1.6; }
+    .cv-card .btn { width: 100%; justify-content: center; }
+    .cv-divider { height: 1px; background: var(--border); margin: 1.25rem 0; }
+    .cv-updated { font-size: 11px; color: var(--ink-muted); letter-spacing: 0.05em; }
+    .exp-list { display: grid; gap: 0; }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .exp-item:last-child { border-bottom: none; }
+    .exp-period { font-size: 12px; color: var(--ink-muted); margin-bottom: 4px; }
+    .exp-type { font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+    .exp-content h3 { font-family: var(--serif); font-size: 19px; font-weight: 400; margin-bottom: 4px; }
+    .exp-org { font-size: 13px; color: var(--ink-muted); margin-bottom: 10px; }
+    .exp-content p { font-size: 14px; color: var(--ink-soft); line-height: 1.75; }
+    .edu-item {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 2rem;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .edu-item:last-child { border-bottom: none; }
+    .interests-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    @media (max-width: 680px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .cv-card { position: static; }
+      .exp-item, .edu-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-name">Lillian Hiraoka</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="page-eyebrow">About Me</div>
+      <h1>Scientist, <em>learner</em>,<br>and musician</h1>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-bio">
+        <p>I am an incoming PhD student at Tulane University in the Chemistry Department, and am finishing my undergraduate degree in Chemistry at UC Berkeley. I am broadly interested in studying and probing biochemical signaling pathways, elucidating molecular mechanisms and structure–function relationships to drive innovative therapeutic discoveries — especially for neurobiological and neurochemical problems.</p>
+        <p>My research experiences span both the basic and translational realms, ranging from biochemical metalloenzyme characterization to therapeutic nanomaterials, including regenerative medicine and lipid nanoparticle drug delivery.</p>
+        <p>Outside of academics, I enjoy listening to and performing music, swimming, and running!</p>
+        <div style="margin-top:1.5rem;display:flex;gap:10px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Get in touch</a>
+          <a href="https://www.linkedin.com/in/lhiraoka/" target="_blank" rel="noopener" class="btn">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="cv-card">
+        <div class="cv-icon">📋</div>
+        <h3>Curriculum Vitae</h3>
+        <p>Download my full CV for a complete overview of my research experience, education, and skills.</p>
+        <a href="cv.pdf" download class="btn btn-primary">
+          <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          Download CV
+        </a>
+        <div class="cv-divider"></div>
+        <p class="cv-updated">Updated 2026</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Education</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-list">
+        <div class="edu-item">
+          <div>
+            <div class="exp-period">2026 — present</div>
+            <div class="exp-type">Incoming</div>
+          </div>
+          <div class="exp-content">
+            <h3>PhD, Chemistry</h3>
+            <div class="exp-org">Tulane University</div>
+            <p>Incoming doctoral student in the Chemistry Department.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div>
+            <div class="exp-period">2022 — 2026</div>
+            <div class="exp-type">Undergraduate</div>
+          </div>
+          <div class="exp-content">
+            <h3>B.S., Chemistry</h3>
+            <div class="exp-org">University of California, Berkeley</div>
+            <p>Undergraduate researcher in the Landry Lab. Senior thesis in progress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Research Experience</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-list">
+        <div class="exp-item">
+          <div>
+            <div class="exp-period">Current</div>
+            <div class="exp-type">Undergraduate Researcher</div>
+          </div>
+          <div class="exp-content">
+            <h3>Landry Lab</h3>
+            <div class="exp-org">University of California, Berkeley</div>
+            <p>Contributing to research at the intersection of chemical biology and nanotechnology. Developing and characterizing functional nanomaterials with applications in biosensing, imaging, and therapeutic delivery.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-period">Past</div>
+            <div class="exp-type">Research</div>
+          </div>
+          <div class="exp-content">
+            <h3>Metalloenzyme Biochemistry</h3>
+            <div class="exp-org">Basic Science Research</div>
+            <p>Biochemical characterization of metalloenzymes, probing catalytic mechanisms and structural features through biophysical and enzymatic assays.</p>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div>
+            <div class="exp-period">Past</div>
+            <div class="exp-type">Translational Research</div>
+          </div>
+          <div class="exp-content">
+            <h3>Therapeutic Nanomaterials & Regenerative Medicine</h3>
+            <div class="exp-org">Translational Research</div>
+            <p>Explored therapeutic applications of nanomaterials in regenerative medicine, gaining hands-on experience with lipid nanoparticle formulation and delivery system design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Interests</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="interests-grid">
+        <span class="tag">Biochemical signaling</span>
+        <span class="tag">Neurobiology</span>
+        <span class="tag">Drug delivery</span>
+        <span class="tag">Metalloenzymes</span>
+        <span class="tag">Nanomaterials</span>
+        <span class="tag">Regenerative medicine</span>
+        <span class="tag">Music performance</span>
+        <span class="tag">Swimming</span>
+        <span class="tag">Running</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Lillian Hiraoka · UC Berkeley</footer>
+</body>
+</html>

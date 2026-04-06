@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lillian Hiraoka</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .hero {
+      padding: 7rem 0 5rem;
+      display: grid;
+      grid-template-columns: 1fr 180px;
+      gap: 3rem;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 24px; height: 1px;
+      background: var(--accent);
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(40px, 7vw, 64px);
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 em { font-style: italic; color: var(--accent); }
+    .hero-bio { font-size: 15px; line-height: 1.85; color: var(--ink-soft); max-width: 520px; margin-bottom: 2rem; }
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .avatar-ring {
+      width: 150px; height: 150px;
+      border-radius: 50%;
+      border: 1px solid var(--accent-light);
+      padding: 6px;
+    }
+    .avatar-inner {
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--serif);
+      font-size: 44px; font-weight: 300;
+      color: white; letter-spacing: -1px;
+    }
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .highlight-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+      display: block;
+    }
+    .highlight-card:hover { border-color: var(--accent-light); transform: translateY(-2px); }
+    .highlight-icon { font-size: 20px; margin-bottom: 0.75rem; }
+    .highlight-card h3 { font-family: var(--serif); font-size: 18px; font-weight: 400; margin-bottom: 6px; }
+    .highlight-card p { font-size: 13px; color: var(--ink-muted); line-height: 1.6; }
+    .highlight-arrow { font-size: 18px; color: var(--accent); margin-top: 1rem; display: block; }
+    .news-preview { padding: 4rem 0; }
+    .news-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .news-date { font-family: var(--sans); font-size: 12px; color: var(--ink-muted); padding-top: 3px; }
+    .news-item h4 { font-size: 14px; font-weight: 500; margin-bottom: 3px; }
+    .news-item p { font-size: 13px; color: var(--ink-soft); }
+    @media (max-width: 680px) {
+      .hero { grid-template-columns: 1fr; padding: 4rem 0 3rem; }
+      .highlights { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-name">Lillian Hiraoka</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Undergraduate Researcher · UC Berkeley</div>
+        <h1>Probing the <em>language</em><br>of living cells</h1>
+        <p class="hero-bio">I study biochemical signaling pathways and molecular mechanisms to drive innovative therapeutic discoveries — with a particular focus on neurobiological problems. Incoming PhD student at Tulane University.</p>
+        <div class="hero-tags">
+          <span class="tag">Biochemical Signaling</span>
+          <span class="tag">Neurobiology</span>
+          <span class="tag">Drug Delivery</span>
+          <span class="tag">Nanomaterials</span>
+        </div>
+        <div class="hero-actions">
+          <a href="research.html" class="btn btn-primary">View Research</a>
+          <a href="about.html" class="btn">About Me</a>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:1rem;">
+        <div class="avatar-ring">
+          <div class="avatar-inner">LH</div>
+        </div>
+        <div style="text-align:center;font-size:12px;color:var(--ink-muted);line-height:1.5;">
+          <strong style="display:block;font-weight:500;font-size:13px;color:var(--ink-soft);">Landry Lab</strong>
+          UC Berkeley
+        </div>
+      </div>
+    </div>
+
+    <div class="highlights">
+      <a href="research.html" class="highlight-card">
+        <div class="highlight-icon">🧬</div>
+        <h3>Research</h3>
+        <p>Biochemical signaling, metalloenzymes, lipid nanoparticles & nanomaterials.</p>
+        <span class="highlight-arrow">→</span>
+      </a>
+      <a href="publications.html" class="highlight-card">
+        <div class="highlight-icon">📄</div>
+        <h3>Publications</h3>
+        <p>Senior thesis in progress. More work coming soon.</p>
+        <span class="highlight-arrow">→</span>
+      </a>
+      <a href="blog.html" class="highlight-card">
+        <div class="highlight-icon">✍️</div>
+        <h3>Blog</h3>
+        <p>Science communication, grad school reflections, and personal writing.</p>
+        <span class="highlight-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="news-preview">
+      <div class="section-header">
+        <span class="section-label">Latest News</span>
+        <div class="section-line"></div>
+        <a href="news.html" style="font-size:12px;color:var(--accent);text-decoration:none;white-space:nowrap;">All news →</a>
+      </div>
+      <div class="news-item">
+        <div class="news-date">Spring 2026</div>
+        <div>
+          <h4>Incoming PhD Student — Tulane University</h4>
+          <p>Excited to join the Chemistry Department at Tulane University in Fall 2026.</p>
+        </div>
+      </div>
+      <div class="news-item">
+        <div class="news-date">2025–2026</div>
+        <div>
+          <h4>Senior Thesis in Progress</h4>
+          <p>Working on my undergraduate senior thesis at UC Berkeley.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2026 Lillian Hiraoka · UC Berkeley</footer>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Research — Lillian Hiraoka</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .rcard { background: var(--warm-white); border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; transition: border-color 0.2s, transform 0.2s; position: relative; overflow: hidden; }
+    .rcard::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--accent); opacity: 0; transition: opacity 0.2s; }
+    .rcard:hover { border-color: var(--accent-light); transform: translateY(-2px); }
+    .rcard:hover::before { opacity: 1; }
+    .rcard-icon { font-size: 22px; margin-bottom: 1rem; }
+    .rcard h3 { font-family: var(--serif); font-size: 19px; font-weight: 400; margin-bottom: 0.6rem; line-height: 1.3; }
+    .rcard p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.7; }
+    .rcard-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 1rem; }
+    .rcard-tags .tag { font-size: 10px; padding: 3px 10px; }
+    .thesis-card {
+      background: var(--accent-pale);
+      border: 1px solid var(--accent-light);
+      border-radius: 14px;
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+    }
+    .thesis-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-bottom: 0.75rem; }
+    .thesis-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; max-width: 500px; }
+    .thesis-status { text-align: center; }
+    .thesis-status .status-badge { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; background: var(--accent); color: white; padding: 6px 16px; border-radius: 30px; display: inline-block; margin-bottom: 0.5rem; }
+    .thesis-status p { font-size: 12px; color: var(--ink-muted); }
+    @media (max-width: 680px) {
+      .research-grid { grid-template-columns: 1fr; }
+      .thesis-card { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-name">Lillian Hiraoka</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="page-eyebrow">Research</div>
+      <h1>Questions I'm <em>chasing</em></h1>
+      <p>My work sits at the intersection of chemical biology, biochemistry, and translational medicine — probing how molecules govern cellular decisions and how we can intervene therapeutically.</p>
+    </div>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Focus Areas</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="research-grid">
+        <div class="rcard">
+          <div class="rcard-icon">🧬</div>
+          <h3>Biochemical Signaling Pathways</h3>
+          <p>Investigating the molecular mechanisms that govern cellular communication, with a focus on structure–function relationships that underpin disease and therapeutic intervention.</p>
+          <div class="rcard-tags">
+            <span class="tag">Signaling</span>
+            <span class="tag">Protein biochemistry</span>
+            <span class="tag">Mechanisms</span>
+          </div>
+        </div>
+        <div class="rcard">
+          <div class="rcard-icon">🧠</div>
+          <h3>Neurobiological Therapeutics</h3>
+          <p>Applying chemical biology to unmet challenges in neuroscience — dissecting pathway dysregulation and identifying molecular targets for next-generation treatments.</p>
+          <div class="rcard-tags">
+            <span class="tag">Neurobiology</span>
+            <span class="tag">Drug targets</span>
+            <span class="tag">Neurochemistry</span>
+          </div>
+        </div>
+        <div class="rcard">
+          <div class="rcard-icon">💊</div>
+          <h3>Lipid Nanoparticle Drug Delivery</h3>
+          <p>Engineering and characterizing lipid nanoparticle systems for targeted delivery of therapeutic cargo, bridging materials science and translational medicine.</p>
+          <div class="rcard-tags">
+            <span class="tag">LNPs</span>
+            <span class="tag">Drug delivery</span>
+            <span class="tag">Nanomaterials</span>
+          </div>
+        </div>
+        <div class="rcard">
+          <div class="rcard-icon">⚗️</div>
+          <h3>Metalloenzyme Characterization</h3>
+          <p>Biochemical and biophysical dissection of metal-dependent enzymes to reveal catalytic mechanisms and open new avenues for inhibitor design.</p>
+          <div class="rcard-tags">
+            <span class="tag">Enzymology</span>
+            <span class="tag">Biophysics</span>
+            <span class="tag">Catalysis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Current Work</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="thesis-card">
+        <div>
+          <h3>Senior Thesis</h3>
+          <p>I am currently completing my undergraduate senior thesis at UC Berkeley in the Landry Lab, investigating functional nanomaterials at the intersection of chemical biology and nanotechnology. More details to follow upon completion.</p>
+          <div style="margin-top:1.5rem;">
+            <a href="publications.html" class="btn">View Publications →</a>
+          </div>
+        </div>
+        <div class="thesis-status">
+          <div class="status-badge">In Progress</div>
+          <p>UC Berkeley<br>2025–2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <span class="section-label">Approach</span>
+        <div class="section-line"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+        <div style="padding:1.5rem 0;border-right:1px solid var(--border);padding-right:1.5rem;">
+          <div style="font-family:var(--serif);font-size:32px;color:var(--accent);margin-bottom:0.5rem;">01</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:6px;">Ask mechanistic questions</h4>
+          <p style="font-size:13px;color:var(--ink-muted);line-height:1.7;">Understanding the molecular "why" behind biological phenomena before proposing interventions.</p>
+        </div>
+        <div style="padding:1.5rem;border-right:1px solid var(--border);">
+          <div style="font-family:var(--serif);font-size:32px;color:var(--accent);margin-bottom:0.5rem;">02</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:6px;">Bridge basic and translational</h4>
+          <p style="font-size:13px;color:var(--ink-muted);line-height:1.7;">Connecting fundamental biochemistry to therapeutic applications with real clinical relevance.</p>
+        </div>
+        <div style="padding:1.5rem 0 1.5rem 1.5rem;">
+          <div style="font-family:var(--serif);font-size:32px;color:var(--accent);margin-bottom:0.5rem;">03</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:6px;">Build new tools</h4>
+          <p style="font-size:13px;color:var(--ink-muted);line-height:1.7;">Developing chemical and computational methods to ask questions that weren't previously possible.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Lillian Hiraoka · UC Berkeley</footer>
+</body>
+</html>
