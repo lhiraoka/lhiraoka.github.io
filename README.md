@@ -1,1 +1,0 @@
-# lhiraoka.github.io
